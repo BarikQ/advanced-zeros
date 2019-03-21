@@ -74,12 +74,11 @@ module.exports = function getZerosCount(number, base) {
 
   const answer = final[0];
 
-<<<<<<< HEAD
   return answer;
 }
-=======
+
 function compare_Numeric(a, b) {
   if (a > b) return 1;
   if (a < b) return -1;
 }
->>>>>>> 1017b79cd78ada8f521187717bd9da7c39545163
+
