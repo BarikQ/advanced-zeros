@@ -1,22 +1,35 @@
-module.exports = function getZerosCount(number, base) {
-  factorize(number, base);
-  compare(number, base);
+// console.log( getZerosCount(33234339, 108))
 
-  const answer = final[0];
+// function factorize(number, base) {
 
-  return answer;
+
+//   return 0;
+// }
+
+// function compare(number, base) {
+
+
+//   return final[0];
+// }
+
+function compare_Numeric(a, b) {
+  if (a > b) return 1;
+  if (a < b) return -1;
 }
 
-let power = [];
-let final = [];
-let result = [];
-let denominator = 0;
-let slag = 0;
-let min = 0;
-let k = 0;
-let j = 0;
+module.exports = function getZerosCount(number, base) {
+  // factorize(number, base);
+  // compare(number, base);
 
-function factorize(number, base) {
+  let power = [];
+  let final = [];
+  let result = [];
+  let denominator = 0;
+  let slag = 0;
+  let min = 0;
+  let k = 0;
+  let j = 0;
+
   while (k <= base) {
     result[k] = 0;
     power[k] = 0;
@@ -35,10 +48,6 @@ function factorize(number, base) {
     power[base]++;
   }
 
-  return 0;
-}
-
-function compare(number, base) {
   k = 1;
 
   for (let i = 0; i < power.length; i++) {
@@ -61,10 +70,7 @@ function compare(number, base) {
 
   final.sort(compare_Numeric);
 
-  return final[0];
-}
+  const answer = final[0];
 
-function compare_Numeric(a, b) {
-  if (a > b) return 1;
-  if (a < b) return -1;
+  return answer;
 }
