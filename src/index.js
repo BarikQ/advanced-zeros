@@ -25,7 +25,7 @@ function factorize(number, base) {
 
   for (let i = 2; i * i <= base; i++) {
 
-    while (base % i == 0) {
+    while (base % i === 0) {
       power[i]++;
       base /= i;
     }
