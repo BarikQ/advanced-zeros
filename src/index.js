@@ -1,6 +1,8 @@
+
 // console.log( getZerosCount(33234339, 108))
 
 // function factorize(number, base) {
+
 
 
 //   return 0;
@@ -38,7 +40,7 @@ module.exports = function getZerosCount(number, base) {
 
   for (let i = 2; i * i <= base; i++) {
 
-    while (base % i == 0) {
+    while (base % i === 0) {
       power[i]++;
       base /= i;
     }
@@ -72,5 +74,12 @@ module.exports = function getZerosCount(number, base) {
 
   const answer = final[0];
 
+<<<<<<< HEAD
   return answer;
 }
+=======
+function compare_Numeric(a, b) {
+  if (a > b) return 1;
+  if (a < b) return -1;
+}
+>>>>>>> 1017b79cd78ada8f521187717bd9da7c39545163
