@@ -1,8 +1,8 @@
 module.exports = function getZerosCount(number, base) {
   factorize(number, base);
-  compare(number, base);
+ // compare(number, base);
 
-  const answer = final[0];
+  const answer = compare(number, base);
 
   return answer;
 }
