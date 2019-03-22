@@ -1,24 +1,3 @@
-
-// console.log( getZerosCount(33234339, 108))
-
-// function factorize(number, base) {
-
-
-
-//   return 0;
-// }
-
-// function compare(number, base) {
-
-
-//   return final[0];
-// }
-
-function compare_Numeric(a, b) {
-  if (a > b) return 1;
-  if (a < b) return -1;
-}
-
 module.exports = function getZerosCount(number, base) {
   // factorize(number, base);
   // compare(number, base);
@@ -81,4 +60,3 @@ function compare_Numeric(a, b) {
   if (a > b) return 1;
   if (a < b) return -1;
 }
-
